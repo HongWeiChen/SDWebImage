@@ -654,6 +654,10 @@ static NSUInteger SDDeviceFreeMemory() {
     if (_currentFrame) {
         layer.contentsScale = self.animatedImageScale;
         layer.contents = (__bridge id)_currentFrame.CGImage;
+    } else {
+        if ([UIImageView instancesRespondToSelector:@selector(displayLayer:)]) {
+            [super displayLayer:layer];
+        }
     }
 }
 
