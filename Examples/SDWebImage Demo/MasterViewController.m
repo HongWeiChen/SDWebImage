@@ -8,8 +8,8 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
-#import <SDWebImage/SDWebImage.h>
-#import <SDWebImageWebPCoder/SDImageWebPCoder.h>
+#import <SDWebImage.h>
+//#import <SDWebImageWebPCoder/SDImageWebPCoder.h>
 
 @interface MyCustomTableViewCell : UITableViewCell
 
@@ -52,7 +52,7 @@
                                                                                target:self
                                                                                action:@selector(flushCache)];
         
-        [[SDImageCodersManager sharedManager] addCoder:[SDImageWebPCoder sharedCoder]];
+//        [[SDImageCodersManager sharedManager] addCoder:[SDImageWebPCoder sharedCoder]];
         
         // HTTP NTLM auth example
         // Add your NTLM image url to the array below and replace the credentials

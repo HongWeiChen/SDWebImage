@@ -6,7 +6,7 @@ project 'SDWebImage Demo'
 workspace '../SDRNWebImage'
 
 pod 'SDRNWebImage/Core', :path => '../'
-pod 'SDWebImageWebPCoder'
+#pod 'SDWebImageWebPCoder', :git => 'https://github.com/SDWebImage/SDWebImageWebPCoder.git', :branch => 'master'
 
 target 'SDWebImage iOS Demo' do
   platform :ios, '8.0'

@@ -1,0 +1,6 @@
+framework module SDRNWebImage {
+  umbrella header "SDWebImage.h"
+
+  export *
+  module * { export * }
+}

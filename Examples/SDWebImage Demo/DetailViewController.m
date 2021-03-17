@@ -7,7 +7,7 @@
  */
 
 #import "DetailViewController.h"
-#import <SDWebImage/SDWebImage.h>
+#import <SDWebImage.h>
 
 @interface DetailViewController ()
 

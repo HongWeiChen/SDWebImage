@@ -23,12 +23,12 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.framework = 'ImageIO'
-  s.module_map = 'WebImage/SDWebImage.modulemap'
+#  s.module_map = 'WebImage/SDRNWebImage.modulemap'
   
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |core|
-    core.source_files = 'SDRNWebImage/*.{h,m}', 'WebImage/SDRNWebImage.h', 'SDRNWebImage/Private/*.{h,m}'
+    core.source_files = 'SDRNWebImage/*.{h,m}', 'WebImage/SDRNWebImage.h', 'SDRNWebImage/Private/*.{h,m}', 'WebImage/SDWebImage.h'
     core.exclude_files = 'SDRNWebImage/MapKit/*.{h,m}'
     core.private_header_files = 'SDRNWebImage/Private/*.h'
     core.prefix_header_contents = '#import "SDInternalMacros.h"'
