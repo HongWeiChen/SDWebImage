@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 #import "MasterViewController.h"
 
-#import <SDWebImage/SDWebImage.h>
+//#import <SDWebImage/SDWebImage.h>
+#import <SDWebImage.h>
 
 @implementation AppDelegate
 

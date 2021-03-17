@@ -3,10 +3,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 project 'SDWebImage Demo'
-workspace '../SDWebImage'
+workspace '../SDRNWebImage'
 
-pod 'SDWebImage/Core', :path => '../'
-pod 'SDWebImageWebPCoder', :git => 'https://github.com/SDWebImage/SDWebImageWebPCoder.git', :branch => 'master'
+pod 'SDRNWebImage/Core', :path => '../'
+pod 'SDWebImageWebPCoder'
 
 target 'SDWebImage iOS Demo' do
   platform :ios, '8.0'

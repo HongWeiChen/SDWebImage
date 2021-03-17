@@ -17,7 +17,7 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
-      location = "group:SDWebImage.podspec">
+      location = "group:/Users/hongweichen/Desktop/iOS/SDWebImage/SDRNWebImage.podspec">
    </FileRef>
    <FileRef
       location = "group:CHANGELOG.md">

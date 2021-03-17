@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = 'SDWebImage'
+  s.name = 'SDRNWebImage'
   s.version = '5.0.0'
 
   s.osx.deployment_target = '10.10'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.summary = 'Asynchronous image downloader with cache support with an UIImageView category.'
   s.homepage = 'https://github.com/SDWebImage/SDWebImage'
   s.author = { 'Olivier Poitrey' => 'rs@dailymotion.com' }
-  s.source = { :git => 'https://github.com/SDWebImage/SDWebImage.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/HongWeiChen/SDWebImage.git', :tag => s.version.to_s }
 
   s.description = 'This library provides a category for UIImageView with support for remote '      \
                   'images coming from the web. It provides an UIImageView category adding web '    \
@@ -28,9 +28,9 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |core|
-    core.source_files = 'SDWebImage/*.{h,m}', 'WebImage/SDWebImage.h', 'SDWebImage/Private/*.{h,m}'
-    core.exclude_files = 'SDWebImage/MapKit/*.{h,m}'
-    core.private_header_files = 'SDWebImage/Private/*.h'
+    core.source_files = 'SDRNWebImage/*.{h,m}', 'WebImage/SDRNWebImage.h', 'SDRNWebImage/Private/*.{h,m}'
+    core.exclude_files = 'SDRNWebImage/MapKit/*.{h,m}'
+    core.private_header_files = 'SDRNWebImage/Private/*.h'
     core.prefix_header_contents = '#import "SDInternalMacros.h"'
   end
 
@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
     mk.osx.deployment_target = '10.10'
     mk.ios.deployment_target = '8.0'
     mk.tvos.deployment_target = '9.2'
-    mk.source_files = 'SDWebImage/MapKit/*.{h,m}'
+    mk.source_files = 'SDRNWebImage/MapKit/*.{h,m}'
     mk.framework = 'MapKit'
-    mk.dependency 'SDWebImage/Core'
+    mk.dependency 'SDRNWebImage/Core'
   end
 end
