@@ -27,6 +27,8 @@ Pod::Spec.new do |s|
   
   s.default_subspec = 'Core'
 
+  s.dependency 'IDMPhotoBrowser'
+
   s.subspec 'Core' do |core|
     core.source_files = 'SDWebImage/*.{h,m}', 'WebImage/SDWebImage.h', 'SDWebImage/Private/*.{h,m}'
     core.exclude_files = 'SDWebImage/MapKit/*.{h,m}'
